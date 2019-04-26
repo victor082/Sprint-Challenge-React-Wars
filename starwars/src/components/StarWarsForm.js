@@ -5,7 +5,7 @@ class StarWarsForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            height: '',
+            height: ''
         }
     };
 
@@ -19,16 +19,18 @@ class StarWarsForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <div>
+            {/* <form onSubmit={this.handleSubmit}>
                 <input
-                placeholder="Create a Character" 
+                placeholder="Create a Character..." 
                 type="text"
                 name="height"
                 id="new-char"
                 value={this.state.input}
                 />
                 <button type="submit">Create!</button>
-            </form>
+            </form> */}
+            </div>
         )
     }
 }

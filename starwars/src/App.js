@@ -32,13 +32,6 @@ class App extends Component {
         throw new Error(err);
       });
   };
-  // addChar = char => {
-  //   const newCharArray = [
-  //     ...this.state.starwarsChars,
-  //     { name: name}
-  //   ];
-  //   this.setState({ starwarsChars: newCharArray});
-  // }
 
   render() {
     return (
