@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 .App {
-  text-align: center;
   margin: 0 auto;
-  width: 800px;
+  width: 600px;
   text-align: center;
+  font-family: 'Roboto';
 }
 .Header {
   color: #443e3e;
@@ -10,8 +11,9 @@
 }
 /* write your parent styles in here for your App.js */
 
-.nameInfo {
-  font-size: 1.5rem;
-  color: rgb(252, 197, 96);
+.App .starwars-list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
-
