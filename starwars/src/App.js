@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import StarWarsList from './components/StarWarsList';
+import StarWarsForm from './components/StarWarsForm';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -23,16 +25,23 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(this.state.starwarsChars)
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Star Wars Collectable Cards</h1>
+        <StarWarsForm/>
+        <div>
+          <StarWarsList starwarsChars={this.state.starwarsChars}/>
+        </div>
+
       </div>
     );
   }
